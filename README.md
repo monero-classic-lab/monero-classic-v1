@@ -1,7 +1,7 @@
 # Monero-Classic
 
 Copyright (c) 2014-2019 The Monero-Classic Project.
-Portions Copyright (c) 2012-2013 The monero-classic developers.
+Portions Copyright (c) 2012-2024 The monero-classic developers.
 
 ## Table of Contents
 
@@ -29,7 +29,7 @@ Portions Copyright (c) 2012-2013 The monero-classic developers.
 
 - Web: [monero-classic.org](http://monero-classic.org)
 - Mail: [dev@monero-classic.org](mailto:dev@monero-classic.org)
-- GitHub: [https://github.com/monero-classic/monero](https://github.com/monero-classic/monero)
+- GitHub: [https://github.com/monero-classic-lab/monero-classic-v1](https://github.com/monero-classic-lab/monero-classic-v1)
 
 ## Social Media
 
@@ -204,7 +204,7 @@ FreeBSD one liner for required to build dependencies
 
 Clone recursively to pull-in needed submodule(s):
 
-`$ git clone --recursive https://github.com/monero-classic/monero`
+`$ git clone --recursive https://github.com/monero-classic-lab/monero-classic-v1`
 
 If you already have a repo cloned, initialize and update:
 
@@ -221,8 +221,11 @@ invokes cmake commands as needed.
 * Change to the root of the source code directory, change to the most recent release branch, and build:
 
     ```bash
-    cd monero
-    git checkout master
+    cd monero-classic-v1
+    git checkout 756ba34dc12395b45165416b8308ff1179bb0591
+    mkdir build
+    cd build
+    cmake ..
     make
     ```
 
@@ -296,9 +299,9 @@ Tested on a Raspberry Pi Zero with a clean install of minimal Raspbian Stretch (
 * Clone monero-classic and checkout the most recent release version:
 
     ```bash
-    git clone https://github.com/monero-classic/monero.git
-    cd monero
-    git checkout tags/v0.14.1.2
+    git clone https://github.com/monero-classic-lab/monero-classic-v1.git
+    cd monero-classic-v1
+    git checkout 756ba34dc12395b45165416b8308ff1179bb0591
     ```
 
 * Build:
