@@ -208,7 +208,7 @@ Clone recursively to pull-in needed submodule(s):
 
 If you already have a repo cloned, initialize and update:
 
-`$ cd monero && git submodule init && git submodule update`
+`$ cd monero-classic-v1 && git submodule init && git submodule update`
 
 ### Build instructions
 
